@@ -2,6 +2,30 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+ext {
+    bintrayRepo = 'coinindicator'
+    bintrayName = 'com.o.coinindicator'
+
+    publishedGroupId = 'com.o.coinindicator'
+    libraryName = 'coinindicator'
+    artifact = "coinindicator"
+
+    libraryDescription = 'Library gor displaying coins indicator in games'
+
+    siteUrl = "https://github.com/schnaps1981/CoinIndicator"
+    gitUrl = "https://github.com/schnaps1981/CoinIndicator"
+
+    libraryVersion = "1.0.0"
+
+    developerId = "schnaps1981"
+    developerName = "Alex Ul"
+    developerEmail = "schnaps1981@gmail.com"
+
+    licenseName = "The Apache Software License, Version 2.0"
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -23,6 +47,13 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        incremental = false
+    }
+
+
 }
 
 dependencies {
@@ -34,3 +65,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
