@@ -17,7 +17,6 @@ Custom View следующего вида
     android:id="@+id/ci_view"
     android:layout_width="0dp"
     android:layout_height="24dp"
-    android:layout_centerInParent="true"
     app:ci_aspectRatio="5"
     app:ci_plusPaddingPercent="20"
     app:ci_hasIcon="true"
@@ -31,5 +30,20 @@ Custom View следующего вида
     app:ci_textSize="16sp"
     app:ci_text="101020.30"/>
 ```
+
+* ширина, указанная в атрибутах игнорируется, расчитывается через высоту и ci_aspectRatio: 
+width = height * ci_aspectRatio
+* ci_plusPaddingPercent отступ линий "плюса" от края. Задается в процентах высоты
+* ci_hasIcon - флаг отрисовки иконки справа
+* ci_icon - drawable иконки
+* ci_plusThickness - толщина линий "плюса"
+* ci_textColor - цвет текста
+* ci_startColor - начальный цвет градиента фона поля с иконокой и текстом
+* ci_endColor - конечный цвет градиента фона поля с иконокой и текстом
+* ci_plusColor - цвет линий плюса
+* ci_plusBackgroundColor - цвет фона поля с плюсом
+* ci_textSize - размер текста
+* ci_text - текст
+
 
 
