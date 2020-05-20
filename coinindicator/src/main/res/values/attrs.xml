@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CoinIndicatorView">
+        <attr name="ci_startColor" format="color"/>
+        <attr name="ci_endColor" format="color"/>
+        <attr name="ci_plusColor" format="color"/>
+        <attr name="ci_textColor" format="color"/>
+        <attr name="ci_plusBackgroundColor" format="color"/>
+        <attr name="ci_plusThickness" format="dimension"/>
+        <attr name="ci_hasIcon" format="boolean"/>
+        <attr name="ci_icon" format="reference"/>
+        <attr name="ci_plusPaddingPercent" format="integer"/>
+        <attr name="ci_textSize" format="dimension"/>
+        <attr name="ci_text" format="string"/>
+        <attr name="ci_aspectRatio" format="integer"/>
+    </declare-styleable>
+</resources>
